@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile</title>
+    <style type="text/css">
+        body{
+            margin: 0px;
+        }
+        #mainarea{
+            margin: 0px auto;
+            width: 1200px;
+            height: 1000px;
+            background: skyblue;
+        }
+        #toparea{
+            width: 100%;
+            height: 100px;
+            background: whitesmoke;
+        }
+        #logoleft{
+            width: 100px;
+            height: 100%;
+            background: rgb(245, 238, 238);
+            float: left;
+        }
+        
+        #logoleft img{
+            width: 100%;
+            height: 100%;
+        }
+        #title{
+            width: 700px;
+            height: 100%;
+            background: whitesmoke;
+            float: left;
+            /* border-right: solid 1px red ; */
+        }
+        #title img{
+            width: 100%;
+            height: 100%;
+        }
+        /* #logoright{
+            width: 100px;
+            height: 100%;
+            background: red;
+            float: right;
+            
+        }
+        #logoright img{
+            width: 100%;
+            height: 100%;
+        } */
+        #menuarea{
+            width: 392px;
+            height: 100%;
+            background: yellowgreen;
+            float: left;
+            border-left: solid 4px #2F72FF ;
+            border-right: solid 4px #2F72FF ;
+            border-radius: 5px;
+        }
+        #menutop{
+            width: 100%;
+            height: 55%;
+            background: whitesmoke;
+        }
+        #menutopright{
+            width: 140px;
+            height: 100%;
+            background: whitesmoke;
+            float: right;
+        }
+        #menutopright ul{
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        #menutopright ul li {
+            float: left;
+            margin: 10px;
+            text-align: center;
+
+        }
+
+        #menutopright ul li a img{
+            width: 20px;
+            height: 20px;
+            margin: 0px;
+        }
+        #menutopright ul li a:link , #menutopright ul li a:visited {
+            color: #2F72FF;
+            text-decoration: none;
+            /* padding: 10px , 25px; */
+            /* border-right: solid 1px black; */
+        }
+        #menutopright ul li a:hover {
+            color: black;
+            /* border: solid 1px red; */
+            
+            
+
+        }
+        #menubottom{
+            width: 100%;
+            height: 45%;
+            background: whitesmoke;
+        }
+        #menubottom ul{
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        #menubottom ul li {
+            float: left;
+            margin: 10px;
+            text-align: center;
+            background: whitesmoke;
+            border-radius: 2px;
+        }
+        .menubottomlogo{
+            width: 25px;
+            height: 25px;
+            margin-bottom: 0px;
+            float: left;
+            background: transparent;
+            padding-top: 3px;
+        }
+        .menubottomlogo img{
+            width: 100%;
+            height: 100%;
+        }
+        .menubottomname{
+            margin-top: 9px ;
+            width:75px ;
+            text-align: center;
+            background: transparent;
+        }
+
+        
+        /* #menubottom ul li a img{
+            width: 20px;
+            height: 20px;
+            margin: 0px;
+            
+           
+        } */
+        #menubottom ul li a:link , #menubottom ul li a:visited {
+            color: #2F72FF;
+            text-decoration: none;
+            /* padding: 10px , 25px; */
+            /* border-right: solid 1px black; */
+        }
+        #menubottom ul li a:hover {
+            color: black;
+            /* background: #2F72FF; */
+            text-decoration: underline;
+            text-decoration-color: red;
+            
+
+        }
+        #searcharea{
+            width: 1200px;
+            height: 60px;
+            /* background: skyblue; */
+            background: #2F72FF;
+        }
+        #search{
+            margin-top: 7px;
+            width: 400px;
+            height:40px;
+            background: whitesmoke;
+            margin-left: 400px;
+            float: left;
+           
+            border: solid 3px red;
+            border-radius: 5px;
+            text-align: center;
+            
+            /* text-align: center; */
+        }
+        #search h3{
+            margin-top: 0px;
+            padding-top: 10px;
+        }
+        /* #search h3{
+            text-align: center;
+            border: solid 1px red;
+            
+        } */
+        #iframe{
+            width: 1200px;
+            height: 1015px;
+            background:  whitesmoke;
+            /* border: none;
+            outline: none;
+            box-shadow: none; */
+            /* border: solid 1px red; */
+            position: relative;
+            overflow: hidden;
+            
+        }
+        #latestupdate{
+            width: 100%;
+            height: 400px;
+            background: whitesmoke;
+            /* border-bottom: solid 5px #2F72FF ; */
+            
+            border-radius: 60px;
+        }
+        #latestupdate h2{
+            text-align: center;
+            color: red;
+            background: white;
+        }
+        #slide{
+            margin: 20px 100px;
+            width: 1000px;
+            height: 330px;
+            background: pink;
+            
+        }
+        #slide:hover{
+            -webkit-box-shadow: 4px -3px 23px 12px #000000; 
+box-shadow: 4px -3px 23px 12px #000000;
+        }
+        #slide img,#slide video{
+            width: 100%;
+            height: 100%;
+            border: solid 2px red;
+        }
+        #phone{
+            margin-top: 5px;
+            width: 100%;
+            height: 500px;
+            background: palevioletred;
+            background-image: url('photo.webp');
+            border-bottom: solid 5px #2F72FF ;
+            border-top: solid 5px #2F72FF ;
+            border-radius: 60px;
+            overflow: auto;
+            
+            
+        }
+        #phonetitle{
+            width: 100%;
+            height: 50px;
+            background: transparent;
+            text-align: center;
+            color:  #f90000;
+            padding: 2px 0px 20px 0px;
+            text-shadow: 6px 2px 8px black;
+        }
+       
+        .table{
+            width: 350px;
+            height: 300px;
+            background:rgba(221, 221, 233, 0.885);
+            margin: 25px 18px 10px 24px;
+            border-left: solid 4px #2F72FF ;
+            border-right: solid 4px #2F72FF ;
+            border-bottom: solid 2px #2F72FF ;
+            border-top: solid 2px #2F72FF ;
+            border-radius: 20px;
+            float: left;
+            
+            
+            
+        }
+        .table:hover{
+            -webkit-box-shadow: 4px -3px 23px 12px #000000; 
+box-shadow: 4px -3px 23px 12px #000000;
+        }
+        .table a{
+            text-decoration: none;
+        }
+        .tabletitle{
+            margin-top:0px ;
+            margin-left: 25px;
+            width: 300px;
+            height: 50px;
+            background: whitesmoke;
+            border-radius: 7px;
+            border-right: solid 2px rgb(216, 0, 254);
+            border-left: solid 2px rgb(216, 0, 254);
+        }
+        .tabletitlelogo{
+            margin: 2px 2px 2px 4px;
+            width: 50px;
+            background: transparent;
+            height: 90%;
+            float: left;
+            border-radius: 20px;
+        }
+        .tabletitlelogo img{
+            width: 100%;
+            height: 100%;
+            border-radius: 19px;
+            border: solid 1px   #2F72FF;
+        }
+        .tabletitlebrand{
+            width: 230px;
+            height: 90%;
+            margin: 2px 2px 2px 4px;
+            background:  #2F72FF;
+            float: left;
+            border-radius: 7px;
+        }
+        .tabletitlebrand h2{
+            text-align: center;
+            padding-top:7px ;
+            margin-top: 0px;
+            text-decoration: none;
+            /* background: #2F72FF; */
+            color: white;
+
+           
+        }
+        .tablevideo{
+            width: 330px;
+            height: 235px;
+            background: whitesmoke;
+            margin: 5px 10px  ;
+            border: solid 2px red;
+            border-radius: 25px;
+        }
+        .tablevideo video{
+            border-radius: 25px;
+            width: 100%;
+            height: 100%;
+
+        } 
+        .tablevideo img{
+            border-radius: 25px;
+            width: 30%;
+            height: 100%;
+        }
+        #footarea{
+            width: 100%;
+            height: 250px;
+            /* background: #2F72FF; */
+            /* background-color: rgb(108, 82, 175); */
+            margin-top: 3px;
+        }
+        .footbox{
+            width: 395px;
+            height: 100%;
+            /* background: skyblue; */
+            background: #2F72FF;
+            float: left;
+            margin-right: 5px;
+        }
+        .footbox h2{
+            margin-top: 10px;
+            text-align: center;
+        }
+        .footbox hr{
+            color: pink;
+        }
+        .footbox ul{
+            list-style: none;
+            background: transparent;
+        }
+        .footbox ul li {
+            margin-top: 10px;
+            margin-left: 30px;
+            color: black;
+            background-color: transparent;
+        }
+        .footbox ul li img{
+            width: 15px;
+            padding-bottom: 0px;
+            background: white;
+            border-radius: 20px;
+        }
+        .footbox ul li a:link , .footbox ul li a:visited{
+            color: white;
+            text-decoration: none;
+        }
+        .footbox ul li a:hover{
+            color: black;
+            text-decoration: underline;
+            text-decoration-color: red;
+        }
+        .footbox ul li a:active{
+            color: red;
+        }
+        .footbox iframe{
+            margin-top: 0px;
+            margin-left: 5px;
+            width: 380px;
+            height: 180px;
+        }
+        #footlast{
+            margin: 0px;
+            width: 100%;
+            height: 70px;
+            background: whitesmoke ;
+        }
+        #footlast hr{
+            margin-top: 0px;
+            width: 900px;
+        }
+        #footlast h4{
+            margin-top: 0px;
+            margin-left: 300px;
+        }
+
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div id="mainarea">
+        <div id="toparea">
+            <div id="logoleft"><img src="logo.png" alt=""></div>
+            <div id="title"><img src="mobiworld.png" alt=""></div>
+            <div id="menuarea">
+                <div id="menutop">
+                    <div id="menutopright">
+                        <ul>
+                            <li><a href="#">❤️ <br> Wishlist</a></li>
+                            <li><a href="#"><img src="login2.jpg" alt=""><br> Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="menubottom">
+                    <ul>
+                        <li> 
+                            <a href="home.html" target="op">
+                                <div class="menubottomlogo"><img src="home_logo.png" alt=""></div>
+                                <div class="menubottomname">Home</div>
+                            </a>
+                        </li>
+                        <li> 
+                            <a href="#">
+                               <div class="menubottomlogo"><img src="about_us_logo.png" alt=""></div>
+                                <div class="menubottomname">About</div> 
+                            </a>
+                        </li>
+                        <li> 
+                            <a href="#">
+                               <div class="menubottomlogo"><img src="cart_logo.png" alt=""></div>
+                                <div class="menubottomname">Cart</div> 
+                            </a>
+                        </li>
+                        <li> 
+                            <a href="#">
+                               <div class="menubottomlogo"><img src="contact_logo.png" alt=""></div>
+                                <div class="menubottomname">Contact </div> 
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <!-- <div id="logoright"><img src="login2.jpg" alt=""></div> -->
+        </div>
+
+        <div id="searcharea">
+            <div id="search"><h3>Search </h3></div>
+        </div>
+        <div id="iframe">
+            <iframe src="home.html" width="100%"  height="100%" name="op"></iframe>
+        </div>   
+            
+        
+           
+            
+            
+         
+            <div id="footarea">
+                <div class="footbox">
+                    <h2>Menu</h2> <hr>
+                    <ul>
+                        <li><a href="#"> <img src="home_logo.png" alt=""> Home</a></li>
+                        <li> <a href="#"><img src="about_us_logo.png" alt=""> About</a></li>
+                        <li> <a href="#"> <img src="cart_logo.png" alt=""> Cart</a></li>
+                        <li> <a href="#"> <img src="contact_logo.png" alt=""> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footbox">
+                    <h2>Find me</h2> <hr>
+                    <ul>
+                        <li><a href="#"><img src="youtube_logo.png" alt=""> Youtube</a></li>
+                        <li><a href="#"> <img src="teligram_logo (1).webp" alt="" width="20px"> Teligram </a></li>
+                        <li><a href="#"> <img src="facebook_logo.png" alt=""> Facebook</a></li>
+                        <li><a href="#"> <img src="instagram_logo.png" alt=""> Instagram</a></li>
+                        <li><a href="#"> <img src="snapchat_logo.png" alt=""> Snapchat</a></li>
+                        <li><a href="#"> <img src="twiter_logo.png" alt="" > Tiweter</a></li>
+
+
+                    </ul>
+                </div>
+                <div class="footbox">
+                    <h2>Location</h2> <hr>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.0638296061047!2d86.18813077511726!3d23.816329178625487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f41d636390d813%3A0x84282604aea9de29!2sSURAJ%20BHAWAN!5e0!3m2!1sen!2sin!4v1751700546241!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div> 
+             </div>
+            <div id="footlast">
+                <br>
+                <hr color=" #2F72FF" width="800px">
+                <h4>Design & Developed By <font color="red">Vivek Kumar</font>  under the guidance of <a href="#"><font color="red"> <u>Kunal sir</u></font></a> </h4>
+            </div>
+            
+        
+        </div>
+    </div>
+
+    
+</body>
+</html>
